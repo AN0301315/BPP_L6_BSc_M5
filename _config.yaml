@@ -1,5 +1,6 @@
 title: Data Science Portfolio 
-logo: C:\Users\nitsca\OneDrive - Cambridge\Desktop\Anita at OCR - 2020+\Apprenticeship\L6_BSc (BPP)\Module 5 - Data Science Professional Practice\Txx - Assessment\Images\Stickperson.jfif
+logo: /assets/images/Stickperson.jfif
+description: Time Machine is a theme for GitHub Pages.
 #description: text below image 
-show_downloads: true 
-theme: jekyll-theme-minimal 
+show_downloads: true
+theme: jekyll-theme-time-machine
