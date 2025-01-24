@@ -34,6 +34,10 @@ Image 3: Data & Process Flow Chart Legend
 ![Data & Process Flow Chart](/docs/assets/images/DataProcessFlowChart_Legend.jpg "Data & Process Flow Chart")
 Image 4: Data & Process Flow Chart
 The Data & Process Workflow Illustrations (image 3 and 4) provides details about each process step. 
+Image 5: Data-dictionary (raw dataset)
+Image 6: Data-dictionary (cleaned dataset)
+The Data Dictionaries (images 5 and 6) provides dataset key information, like variables, description and values, and datatype.
+##### Analysis
 
 
 Read Me under docs
