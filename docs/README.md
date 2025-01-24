@@ -1,9 +1,9 @@
 #### My Bio
 ![Stickperson Me](/docs/assets/images/Stickperson.jfif "Stickperson representing Me")
-This GitHub page has been created for educational purposes only as required by the summative assessment for my studies of ‘Data Science Professional Practice’.<br>
+This GitHub page has been created for educational purposes only as required by the summative assessment for my studies of ‘Data Science Professional Practice’.
 To protect my privacy, I will stay anonymous.
 
-<img src="/docs/assets/images/Stickperson.jfif">
+
 
 #### Title
 Predicting UK GQ education malpractice cases (%) by exam board (multivariate time series analysis), using public data.
