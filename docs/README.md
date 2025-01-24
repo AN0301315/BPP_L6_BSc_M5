@@ -18,9 +18,15 @@ I used the dataset of Summary statistics for GCSE AS and A level (Ofqual Analyti
 
 ##### Process
 In my day-to-day job, data sourcing and methods/tools/concepts used is driven by the business question. This project is the reverse as the dataset drives what research questions can be answered and what methods are suitable.
-
-
 ![Mind_Map](/docs/assets/images/Brainstorming_DataAnalysis_Techniques.jpg)
+Image 1: Mind Map for selecting data analysis method
+After evaluating the suitability of various analysis techniques for the dataset using mind mapping (image 1), I selected Time Series Analysis as it is the most relevant option for the dataset.
+
+##### Methods, Techniques, Tools and Technologies
+Before downloading the dataset, I read through information and documentation provided with the data by the provider, as well as the data usage policy.
+I used Python code, especially the Pandas library, for the Data Quality Audit, and data manipulations, building the supervised machine learning model, and data visualization using libraries Matplotlib and Seaborn. This works well for larger dataset and the procedures are repeatable and easier to maintain, which helped me in rerunning the project after I created a new dataset with Ofqual’s updated version.
+I created ETL Diagrams, Data & Process Workflow Illustrations, and Data Dictionaries for highlighting any bottlenecks or data processing challenges and helping to keep the project realization on track.
+
 
 Read Me under docs
 This is a my stick person image
