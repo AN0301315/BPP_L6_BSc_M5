@@ -20,6 +20,8 @@ I used the dataset of Summary statistics for GCSE AS and A level (Ofqual Analyti
 In my day-to-day job, data sourcing and methods/tools/concepts used is driven by the business question. This project is the reverse as the dataset drives what research questions can be answered and what methods are suitable.
 
 
+![Mind_Map](/docs/assets/images/Brainstorming_DataAnalysis_Techniques.jpg)
+
 Read Me under docs
 This is a my stick person image
 ![Stickperson Me](/docs/assets/images/Stickperson.jfif)
