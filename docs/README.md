@@ -1,9 +1,4 @@
-#### My Bio
 ![Stickperson Me](/docs/assets/images/Stickperson.jfif "Stickperson representing Me")
-This GitHub page has been created for educational purposes only as required by the summative assessment for my studies of ‘Data Science Professional Practice’.
-To protect my privacy, I will stay anonymous.
-
-
 
 #### Title
 Predicting UK GQ education malpractice cases (%) by exam board (multivariate time series analysis), using public data.
@@ -34,9 +29,12 @@ Image 3: Data & Process Flow Chart Legend
 ![Data & Process Flow Chart](/docs/assets/images/DataProcessFlowChart_Legend.jpg "Data & Process Flow Chart")
 Image 4: Data & Process Flow Chart
 The Data & Process Workflow Illustrations (image 3 and 4) provides details about each process step. 
+![Data-Dictionary of raw dataset](/docs/assets/images/DataDictionary_raw.jpg "Data-Dictionary of raw dataset.jpg")
 Image 5: Data-dictionary (raw dataset)
+![Data-Dictionary of cleaned dataset](/docs/assets/images/DataDictionary_cleaned.jpg "Data-Dictionary of cleaned dataset.jpg")
 Image 6: Data-dictionary (cleaned dataset)
 The Data Dictionaries (images 5 and 6) provides dataset key information, like variables, description and values, and datatype.
+
 ##### Analysis
 
 
