@@ -1,6 +1,6 @@
 #### My Bio
 ![Stickperson Me](/docs/assets/images/Stickperson.jfif "Stickperson representing Me")
-This GitHub page has been created for educational purposes only as required by the summative assessment for my studies of ‘Data Science Professional Practice’.
+This GitHub page has been created for educational purposes only as required by the summative assessment for my studies of ‘Data Science Professional Practice’.<br>
 To protect my privacy, I will stay anonymous.
 
 <img src="/docs/assets/images/Stickperson.jfif">
@@ -29,12 +29,16 @@ I created ETL Diagrams, Data & Process Workflow Illustrations, and Data Dictiona
 ![ETL_Pipeline](/docs/assets/images/ETL-Pipeline_I.jpg "ETL-Pipeline Diagram")
 Image 2: ETL-Pipeline
 The concept of the ETL data pipeline (image 2) in data engineering is of Extract (E), Transform (T), and Load (L) the data into a data depository for further use for analysis or presentation. 
-
+![FlowChart_Legend](/docs/assets/images/DataProcessFlowChart_Legend.jpg "Data & Process Flow Chart Legend")
+Image 3: Data & Process Flow Chart Legend
+![Data & Process Flow Chart](/docs/assets/images/DataProcessFlowChart_Legend.jpg "Data & Process Flow Chart")
+Image 4: Data & Process Flow Chart
+The Data & Process Workflow Illustrations (image 3 and 4) provides details about each process step. 
 
 
 Read Me under docs
 This is a my stick person image
-![Stickperson Me](/docs/assets/images/Stickperson.jfif)
+![](/docs/assets/images/Stickperson.jfif)
 #### This is a level 4 header
 ##### This is a level 5 header
 ###### This is a level 6 header
