@@ -5,4 +5,4 @@ To protect my privacy, I will stay anonymous.
 #description: text below image 
 show_downloads: false
 theme: jekyll-theme-time-machine
-baseurl: /BPP_L6_BSc_M5
+baseurl: "/BPP_L6_BSc_M5"
