@@ -13,7 +13,7 @@ I used the dataset of Summary statistics for GCSE AS and A level (Ofqual Analyti
 
 ##### Process
 In my day-to-day job, data sourcing and methods/tools/concepts used is driven by the business question. This project is the reverse as the dataset drives what research questions can be answered and what methods are suitable.
-![Mind_Map](/docs/assets/images/Brainstorming_DataAnalysis_Techniques.jpg "Mind-Map for selecting Data-Analysis Technique")
+![Mind_Map](BPP_L6BSc/docs/assets/images/Brainstorming_DataAnalysis_Techniques.jpg "Mind-Map for selecting Data-Analysis Technique")
 Image 1: Mind Map for selecting data analysis method
 After evaluating the suitability of various analysis techniques for the dataset using mind mapping (image 1), I selected Time Series Analysis as it is the most relevant option for the dataset.
 
