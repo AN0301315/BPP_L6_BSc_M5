@@ -1,3 +1,9 @@
+#### My Bio
+![Stickperson Me](/docs/assets/images/Stickperson.jfif)
+This GitHub page has been created for educational purposes only as required by the summative assessment for my studies of ‘Data Science Professional Practice’.
+To protect my privacy, I will stay anonymous.
+
+
 Read Me under docs
 This is a my stick person image
 ![Stickperson Me](/docs/assets/images/Stickperson.jfif)
