@@ -16,6 +16,11 @@ test 40
 
 ![Me](asssets/images/Stickperson.jpg)
 
+5
+
+![Me](/docs/asssets/images/Stickperson.jpg)
+
+
 #### Title
 Predicting UK GQ education malpractice cases (%) by exam board (multivariate time series analysis), using public data.
 
