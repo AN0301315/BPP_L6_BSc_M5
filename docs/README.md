@@ -1,11 +1,16 @@
-34
+35
 
 ![Stickperson Me](/docs/assets/images/Stickperson.jfif "Stickperson representing Me")
+![Stickperson Me](/docs/assets/images/Stickperson.jpg "Stickperson representing Me")
 ![Stickperson Me](BPP_L6_BSc_M5/docs/assets/images/Stickperson.jfif "Stickperson representing Me")
 ![Stickperson Me](/BPP_L6_BSc_M5/docs/assets/images/Stickperson.jfif "Stickperson representing Me")
 ![Stickperson Me](docs/assets/images/Stickperson.jfif "Stickperson representing Me")
 
 src="{{ site.baseurl }}/docs/assets/images/Stickperson.jpg"
+
+![](/images/Stickperson.jpg)
+![](/assets/images/Stickperson.jpg)
+![](/docs/assets/images/Stickperson.jpg)
 
 #### Title
 Predicting UK GQ education malpractice cases (%) by exam board (multivariate time series analysis), using public data.
