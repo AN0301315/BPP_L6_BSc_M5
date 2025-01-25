@@ -5,3 +5,4 @@ description: This GitHub page has been created for educational purposes only as 
 show_downloads: false
 theme: jekyll-theme-time-machine
 baseurl: "/BPP_L6_BSc_M5"
+- "images"
