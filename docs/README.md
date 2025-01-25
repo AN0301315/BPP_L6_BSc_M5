@@ -1,5 +1,22 @@
-test 37
+test 38
+
+1
 ![](/images/Stickperson.jpg)
+
+2
+![](/assets/images/Stickperson.jpg)
+
+3
+![](/docs/assets/images/Stickperson.jpg)
+
+4
+![](images/Stickperson.jpg)
+
+5
+![](assets/images/Stickperson.jpg)
+
+6
+![](docs/assets/images/Stickperson.jpg)
 
 
 #### Title
