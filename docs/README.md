@@ -12,12 +12,14 @@ The chosen dataset is similar in structure to one I use in my daily work, so bes
 
 ##### Dataset
 The data used in this project is public data, published by Ofqual. “All content is available under the Open Government Licence v3.0”, which means I can “use and re-use the Information that is available under this license freely and flexibly” (The National Archives, 2019) and include it into my work.
+
 I used the dataset of Summary statistics for GCSE AS and A level (Ofqual Analytics, n.d.), with data of the past seven years, which includes the period of the cancelled or modified summer examinations due to the Covid-19 pandemic. I merged the dataset I collected at the beginning of the project contained the years 2017-2023, with an updated version towards completing the project containing the years 2018-2024, which provided me with the data of eight years.
 
 ##### Process
 In my day-to-day job, data sourcing and methods/tools/concepts used is driven by the business question. This project is the reverse as the dataset drives what research questions can be answered and what methods are suitable.
 ![Mind_Map](BPP_L6BSc/docs/assets/images/Brainstorming_DataAnalysis_Techniques.jpg "Mind-Map for selecting Data-Analysis Technique")
 Image 1: Mind Map for selecting data analysis method
+
 After evaluating the suitability of various analysis techniques for the dataset using mind mapping (image 1), I selected Time Series Analysis as it is the most relevant option for the dataset.
 
 ##### Methods, Techniques, Tools and Technologies
