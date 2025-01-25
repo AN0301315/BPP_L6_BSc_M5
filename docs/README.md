@@ -1,24 +1,36 @@
-test 42
+test 43
 
 1
 
-![](images/Stickperson.jpg)
+![](/images/Stickperson.jpg)
 
 2
 
-![Me](images/Stickperson.jpg)
+![](images/Stickperson.jpg)
 
 3
 
-![Me](images/Stickperson.jpg "A stickperson representing me")
+![Me](/images/Stickperson.jpg "A stickperson representing me")
 
 4
 
-![Me](asssets/images/Stickperson.jpg)
+![Me](images/Stickperson.jpg "A stickperson representing me")
 
 5
 
-![Me](/docs/asssets/images/Stickperson.jpg)
+![Me](/assets/images/Stickperson.jpg)
+
+6
+
+![Me](assets/images/Stickperson.jpg)
+
+7
+
+![Me](/docs/assets/images/Stickperson.jpg)
+
+8
+
+![Me](docs/assets/images/Stickperson.jpg)
 
 
 #### Title
