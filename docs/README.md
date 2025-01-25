@@ -8,8 +8,13 @@
 
 src="{{ site.baseurl }}/docs/assets/images/Stickperson.jpg"
 
+1
 ![](/images/Stickperson.jpg)
+
+2
 ![](/assets/images/Stickperson.jpg)
+
+3
 ![](/docs/assets/images/Stickperson.jpg)
 
 #### Title
