@@ -1,4 +1,4 @@
-test 41
+test 42
 
 1
 
@@ -36,7 +36,7 @@ I used the dataset of Summary statistics for GCSE AS and A level [(Ofqual Analyt
 #### Process
 In my day-to-day job, data sourcing and methods/tools/concepts used is driven by the business question. This project is the reverse as the dataset drives what research questions can be answered and what methods are suitable.
 
-![Mind_Map](images/Brainstorming_DataAnalysis_Techniques.jpg "Mind-Map for selecting Data-Analysis Technique")
+![Mind_Map](/docs/assets/images/Brainstorming_DataAnalysis_Techniques.jpg "Mind-Map for selecting Data-Analysis Technique")
 
 Image 1: Mind Map for selecting data analysis method
 
