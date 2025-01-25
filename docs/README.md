@@ -180,25 +180,25 @@ While the time-series does not contain sufficient datapoints to create trustwort
 
 Image 22: Exception when running ndiffs()
 
-The seven-year summary statistic dataset does not provide sufficient datapoints to use most common functions used, as I received exception created while running code, like the one I adapted from Stack Overflow for counting necessary number of differencing [(jmr,2020)](https://stackoverflow.com/questions/63859508/different-results-in-ndiffs-pmdarima-time-series), confirms the small number of data points an issue for stationary testing and differencing (image 22).
+The seven-year summary statistic dataset does not provide sufficient datapoints to use most common functions used, as I received exception created while running code, like the one I adapted from Stack Overflow for counting necessary number of differencing [(jmr, 2020)](https://stackoverflow.com/questions/63859508/different-results-in-ndiffs-pmdarima-time-series), confirms the small number of data points an issue for stationary testing and differencing (image 22).
 
 ##### Recommendations
 The analysis would benefit in create more data points by collecting the data manually from the separate annual reports spanning 2013 to 2024. Thus, will also allow in measuring the Covid-19 Pandemic impact, supporting objective opinions with data when comparing pre-pandemic, pandemic, post-pandemic analysis results.
 
 ### References
-Andrés, D. (2023). *Step-by-Step Guide to Multivariate Time Series Forecasting with VAR Models - ML Pills.* [online] Available at: https://mlpills.dev/time-series/step-by-step-guide-to-multivariate-time-series-forecasting-with-var-models/ (Accessed 5-Dec-2024)
+Andrés, D. (2023). *Step-by-Step Guide to Multivariate Time Series Forecasting with VAR Models - ML Pills.* [online] Available at: [https://mlpills.dev/time-series/step-by-step-guide-to-multivariate-time-series-forecasting-with-var-models/](https://mlpills.dev/time-series/step-by-step-guide-to-multivariate-time-series-forecasting-with-var-models/) (Accessed 5-Dec-2024)
 
-Government Data Quality Hub (2021), *Meet the data quality dimensions.* [online] GOV.UK. Available at: https://www.gov.uk/government/news/meet-the-data-quality-dimensions (Accessed: 14-Nov-2024)
+Government Data Quality Hub (2021), *Meet the data quality dimensions.* [online] GOV.UK. Available at: [https://www.gov.uk/government/news/meet-the-data-quality-dimensions](https://www.gov.uk/government/news/meet-the-data-quality-dimensions) (Accessed: 14-Nov-2024)
 
-jmr (2020). *Different results in ndiffs pmdarima (Time Series).* Stack Overflow. [online] Available at: https://stackoverflow.com/questions/63859508/different-results-in-ndiffs-pmdarima-time-series. (Accessed 15-Jan-2025)
+jmr (2020). *Different results in ndiffs pmdarima (Time Series).* Stack Overflow. [online] Available at: [https://stackoverflow.com/questions/63859508/different-results-in-ndiffs-pmdarima-time-series](https://stackoverflow.com/questions/63859508/different-results-in-ndiffs-pmdarima-time-series) (Accessed 15-Jan-2025)
 
-Ofqual (2022). *Background information for malpractice in GCSE, AS and A level: summer 2022 exam series.* [online] GOV.UK. Available at: https://www.gov.uk/government/statistics/malpractice-in-gcse-as-and-a-level-summer-2022-exam-series/background-information-for-malpractice-in-gcse-as-and-a-level-summer-2022-exam-series (Accessed 20 Nov 2024).
+Ofqual (2022). *Background information for malpractice in GCSE, AS and A level: summer 2022 exam series.* [online] GOV.UK. Available at: [https://www.gov.uk/government/statistics/malpractice-in-gcse-as-and-a-level-summer-2022-exam-series/background-information-for-malpractice-in-gcse-as-and-a-level-summer-2022-exam-series](https://www.gov.uk/government/statistics/malpractice-in-gcse-as-and-a-level-summer-2022-exam-series/background-information-for-malpractice-in-gcse-as-and-a-level-summer-2022-exam-series) (Accessed 20 Nov 2024).
 
-Ofqual Analytics (n.d.). *Summary statistics.* [online] Available at: https://analytics.ofqual.gov.uk/apps/GCSEandGCE/SummaryStats/. (Accessed 30-Oct-2024 and 7-Jan-2024)
+Ofqual Analytics (n.d.). *Summary statistics.* [online] Available at: [https://analytics.ofqual.gov.uk/apps/GCSEandGCE/SummaryStats/](https://analytics.ofqual.gov.uk/apps/GCSEandGCE/SummaryStats/) (Accessed 30-Oct-2024 and 7-Jan-2024)
 
-siamii (2024). *Is there a library function for Root mean square error (RMSE) in python?* [online] Stack Overflow. Available at: https://stackoverflow.com/questions/17197492/is-there-a-library-function-for-root-mean-square-error-rmse-in-python (accessed 18-Jan-2025)
+siamii (2024). *Is there a library function for Root mean square error (RMSE) in python?* [online] Stack Overflow. Available at: [https://stackoverflow.com/questions/17197492/is-there-a-library-function-for-root-mean-square-error-rmse-in-python](https://stackoverflow.com/questions/17197492/is-there-a-library-function-for-root-mean-square-error-rmse-in-python) (accessed 18-Jan-2025)
 
-Singh, A. (2018). *A Multivariate Time Series Guide to Forecasting and Modeling (with Python codes).* [online] Analytics Vidhya. Available at: https://www.analyticsvidhya.com/blog/2018/09/multivariate-time-series-guide-forecasting-modeling-python-codes/ (accessed 5-Dec-2024)
+Singh, A. (2018). *A Multivariate Time Series Guide to Forecasting and Modeling (with Python codes).* [online] Analytics Vidhya. Available at: [https://www.analyticsvidhya.com/blog/2018/09/multivariate-time-series-guide-forecasting-modeling-python-codes/](https://www.analyticsvidhya.com/blog/2018/09/multivariate-time-series-guide-forecasting-modeling-python-codes/) (accessed 5-Dec-2024)
 
-The National Archives (2019). *Open Government Licence.* [online] Nationalarchives.gov.uk. Available at: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/ (Accessed 30-Oct-2024)
+The National Archives (2019). *Open Government Licence.* [online] Nationalarchives.gov.uk. Available at: [https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) (Accessed 30-Oct-2024)
 
