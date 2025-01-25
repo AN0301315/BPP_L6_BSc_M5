@@ -1,5 +1,5 @@
 
-### Title
+#### Title
 Predicting UK GQ education malpractice cases (%) by exam board (multivariate time series analysis), using public data.
 
 #### Introduction
@@ -20,7 +20,7 @@ Image 1: Mind Map for selecting data analysis method
 
 After evaluating the suitability of various analysis techniques for the dataset using mind mapping (image 1), I selected Time Series Analysis as it is the most relevant option for the dataset.
 
-#### Methods, Techniques, Tools and Technologies
+##### Methods, Techniques, Tools and Technologies
 Before downloading the dataset, I read through information and documentation provided with the data by the provider, as well as the data usage policy.
 I used Python code, especially the Pandas library, for the Data Quality Audit, and data manipulations, building the supervised machine learning model, and data visualization using libraries Matplotlib and Seaborn. This works well for larger dataset and the procedures are repeatable and easier to maintain, which helped me in rerunning the project after I created a new dataset with Ofqual’s updated version.
 
@@ -181,7 +181,7 @@ The seven-year summary statistic dataset does not provide sufficient datapoints 
 ##### Recommendations
 The analysis would benefit in create more data points by collecting the data manually from the separate annual reports spanning 2013 to 2024. Thus, will also allow in measuring the Covid-19 Pandemic impact, supporting objective opinions with data when comparing pre-pandemic, pandemic, post-pandemic analysis results.
 
-### References
+#### References
 Andrés, D. (2023). *Step-by-Step Guide to Multivariate Time Series Forecasting with VAR Models - ML Pills.* [online] Available at: [https://mlpills.dev/time-series/step-by-step-guide-to-multivariate-time-series-forecasting-with-var-models/](https://mlpills.dev/time-series/step-by-step-guide-to-multivariate-time-series-forecasting-with-var-models/) (Accessed 5-Dec-2024)
 
 Government Data Quality Hub (2021), *Meet the data quality dimensions.* [online] GOV.UK. Available at: [https://www.gov.uk/government/news/meet-the-data-quality-dimensions](https://www.gov.uk/government/news/meet-the-data-quality-dimensions) (Accessed: 14-Nov-2024)
