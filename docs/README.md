@@ -32,15 +32,24 @@ Image 3: Data & Process Flow Chart Legend
 ![Data & Process Flow Chart](/docs/assets/images/DataProcessFlowChart_Legend.jpg "Data & Process Flow Chart")
 Image 4: Data & Process Flow Chart
 The Data & Process Workflow Illustrations (image 3 and 4) provides details about each process step. 
-![Data-Dictionary of raw dataset](/docs/assets/images/DataDictionary_raw.jpg "Data-Dictionary of raw dataset.jpg")
+![Data-Dictionary of raw dataset](/docs/assets/images/DataDictionary_raw.jpg "Data-Dictionary of raw dataset")
 Image 5: Data-dictionary (raw dataset)
-![Data-Dictionary of cleaned dataset](/docs/assets/images/DataDictionary_cleaned.jpg "Data-Dictionary of cleaned dataset.jpg")
+![Data-Dictionary of cleaned dataset](/docs/assets/images/DataDictionary_cleaned.jpg "Data-Dictionary of cleaned dataset")
 Image 6: Data-dictionary (cleaned dataset)
 The Data Dictionaries (images 5 and 6) provides dataset key information, like variables, description and values, and datatype.
 
 ##### Analysis
+###### Data Exploration & Data Quality
+To get an understanding of the dataset I explored documentation and information provided by the data publisher.
+Based on the six principles of Data Quality Dimensions (Government Data Quality Hub, 2021), I performed a Data Quality Audit, for which I used methods and techniques of descriptive data analysis for data profiling and data exploration.
+![Data-Quality NaN by Topic](/docs/assets/images/DataDictionary_cleaned.jpg "Data-Quality NaN by Topic")
+Image 7: Missing values by Topic
+![Data-Quality summarising variables](/docs/assets/images/DataDictionary_cleaned.jpg "Data-Quality summarising variables")
+Image 8: Summarisation of values for all boards vs ‘All boards’
 
 
+
+---
 Read Me under docs
 This is a my stick person image
 ![](/docs/assets/images/Stickperson.jfif)
