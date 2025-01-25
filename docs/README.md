@@ -12,6 +12,10 @@ test 40
 
 ![Me](images/Stickperson.jpg "A stickperson representing me")
 
+4
+
+![Me](asssets/images/Stickperson.jpg)
+
 #### Title
 Predicting UK GQ education malpractice cases (%) by exam board (multivariate time series analysis), using public data.
 
