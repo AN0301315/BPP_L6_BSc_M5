@@ -1,24 +1,4 @@
-test 43
-
-1
-
-![](/images/Stickperson.jpg)
-
-2
-
-![](images/Stickperson.jpg)
-
-3
-
-![Me](/images/Stickperson.jpg "A stickperson representing me")
-
-4
-
-![Me](images/Stickperson.jpg "A stickperson representing me")
-
-5
-
-![Me](/assets/images/Stickperson.jpg)
+test 44
 
 6
 
@@ -26,11 +6,7 @@ test 43
 
 7
 
-![Me](/docs/assets/images/Stickperson.jpg)
-
-8
-
-![Me](docs/assets/images/Stickperson.jpg)
+![Me](assets/images/Stickperson.jpg "Stickperson representing me")
 
 
 #### Title
@@ -48,7 +24,7 @@ I used the dataset of Summary statistics for GCSE AS and A level [(Ofqual Analyt
 #### Process
 In my day-to-day job, data sourcing and methods/tools/concepts used is driven by the business question. This project is the reverse as the dataset drives what research questions can be answered and what methods are suitable.
 
-![Mind_Map](/docs/assets/images/Brainstorming_DataAnalysis_Techniques.jpg "Mind-Map for selecting Data-Analysis Technique")
+![Mind_Map](assets/images/Brainstorming_DataAnalysis_Techniques.jpg "Mind-Map for selecting Data-Analysis Technique")
 
 Image 1: Mind Map for selecting data analysis method
 
