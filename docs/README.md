@@ -13,7 +13,7 @@ The chosen dataset is similar in structure to one I use in my daily work, so bes
 ##### Dataset
 The data used in this project is public data, published by Ofqual. “All content is available under the Open Government Licence v3.0”, which means I can “use and re-use the Information that is available under this license freely and flexibly” [(The National Archives, 2019)](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) and include it into my work.
 
-I used the dataset of Summary statistics for GCSE AS and A level (Ofqual Analytics, n.d.), with data of the past seven years, which includes the period of the cancelled or modified summer examinations due to the Covid-19 pandemic. I merged the dataset I collected at the beginning of the project contained the years 2017-2023, with an updated version towards completing the project containing the years 2018-2024, which provided me with the data of eight years.
+I used the dataset of Summary statistics for GCSE AS and A level [(Ofqual Analytics, n.d.)](https://analytics.ofqual.gov.uk/apps/GCSEandGCE/SummaryStats/), with data of the past seven years, which includes the period of the cancelled or modified summer examinations due to the Covid-19 pandemic. I merged the dataset I collected at the beginning of the project contained the years 2017-2023, with an updated version towards completing the project containing the years 2018-2024, which provided me with the data of eight years.
 
 ##### Process
 In my day-to-day job, data sourcing and methods/tools/concepts used is driven by the business question. This project is the reverse as the dataset drives what research questions can be answered and what methods are suitable.
@@ -59,7 +59,7 @@ The Data Dictionaries (images 5 and 6) provides dataset key information, like va
 ##### Analysis
 ###### Data Exploration & Data Quality
 To get an understanding of the dataset I explored documentation and information provided by the data publisher.
-Based on the six principles of Data Quality Dimensions (Government Data Quality Hub, 2021), I performed a Data Quality Audit, for which I used methods and techniques of descriptive data analysis for data profiling and data exploration.
+Based on the six principles of Data Quality Dimensions [(Government Data Quality Hub, 2021)](https://www.gov.uk/government/news/meet-the-data-quality-dimensions), I performed a Data Quality Audit, for which I used methods and techniques of descriptive data analysis for data profiling and data exploration.
 
 ![Data-Quality NaN by Topic](/docs/assets/images/DataQualityAudit_NaN_I.jpg "Data-Quality NaN by Topic")
 
@@ -89,7 +89,7 @@ I found it more meaningful to set the malpractice cases in relation to the entri
 Then I transformed the dataset from long format by pivot to wide format, so that there are now multiple variables.
 
 ###### Data Preparation
-I was surprised seeing instead of NaN values a break in pattern during the Covid-19 Pandemic for Malpractice cases. While students received qualification results from the exam boards based on teacher judgement, there were cases with centres not complying with instructions for centre assessed grades (CAG) or students reported to awarding organisations for attempting to gain an unfair advantage. (Ofqual, 2022).
+I was surprised seeing instead of NaN values a break in pattern during the Covid-19 Pandemic for Malpractice cases. While students received qualification results from the exam boards based on teacher judgement, there were cases with centres not complying with instructions for centre assessed grades (CAG) or students reported to awarding organisations for attempting to gain an unfair advantage. [(Ofqual, 2022)](https://www.gov.uk/government/statistics/malpractice-in-gcse-as-and-a-level-summer-2022-exam-series/background-information-for-malpractice-in-gcse-as-and-a-level-summer-2022-exam-series).
 This break in pattern will have an impact on the outcome of the analysis. Thus, I decided to create two data models.
 
 ![Training Dataset Datapoints](/docs/assets/images/Dataset_Train_Plotted.jpg "Linegraph showing Training Dataset Datapoints")
@@ -107,7 +107,8 @@ I completed preparing the dataset for the analysis by formatting the time elemen
 ##### Modelling
 Given its continuous time element, the data is well suited for time series prediction, which is supervised machine learning as the model is trained on existing data. 
 
-The presence of multiple variables, making it a multivariate time series analysis, is new to me. I found guides by Andrés (2023) and Singh (2018) very helpful to see the similarities and differences to my former univariate time-series analysis.
+The presence of multiple variables, making it a multivariate time series analysis, is new to me. I found guides by [Andrés (2023)](https://mlpills.dev/time-series/step-by-step-guide-to-multivariate-time-series-forecasting-with-var-models/) and [Singh (2018)](https://www.analyticsvidhya.com/blog/2018/09/multivariate-time-series-guide-forecasting-modeling-python-codes/) very helpful to see the similarities and differences to my former univariate time-series analysis.
+
 The simplest multivariate model is the Vector Autoregression model (VAR), which works for datasets with a relationship between the variables, like with weather data, or no relationship, like my data.
 
 Prior to model building, Granger’s causality test can be used to identify the relationship between variables, which is unnecessary for my dataset. 
@@ -157,7 +158,7 @@ The success of the model is measured by using part of the dataset not included i
 
 Image 19: Root-Mean-Squared-Error results
 
-Comparing both models, using the RMSE (Root-Mean-Squared-Error) function (siamii, 2024), confirmed that the break in pattern of the data of the pandemic years does have an impact on the results of the analysis, as the second model with the Covid-19 numbers being replaced by the training data mean, performed better (image 19).
+Comparing both models, using the RMSE (Root-Mean-Squared-Error) function [(siamii, 2024)](https://stackoverflow.com/questions/17197492/is-there-a-library-function-for-root-mean-square-error-rmse-in-python ), confirmed that the break in pattern of the data of the pandemic years does have an impact on the results of the analysis, as the second model with the Covid-19 numbers being replaced by the training data mean, performed better (image 19).
 
 ###### Prediction
 ![Predicting2025 by variable](/docs/assets/images/Prediction_1Year_1_I.jpg "Predicting2025 by variable")
@@ -179,36 +180,25 @@ While the time-series does not contain sufficient datapoints to create trustwort
 
 Image 22: Exception when running ndiffs()
 
-The seven-year summary statistic dataset does not provide sufficient datapoints to use most common functions used, as I received exception created while running code, like the one I adapted from Stack Overflow for counting necessary number of differencing (jmr,2020), confirms the small number of data points an issue for stationary testing and differencing (image 22).
+The seven-year summary statistic dataset does not provide sufficient datapoints to use most common functions used, as I received exception created while running code, like the one I adapted from Stack Overflow for counting necessary number of differencing [(jmr,2020)](https://stackoverflow.com/questions/63859508/different-results-in-ndiffs-pmdarima-time-series), confirms the small number of data points an issue for stationary testing and differencing (image 22).
 
 ###### Recommendations
 The analysis would benefit in create more data points by collecting the data manually from the separate annual reports spanning 2013 to 2024. Thus, will also allow in measuring the Covid-19 Pandemic impact, supporting objective opinions with data when comparing pre-pandemic, pandemic, post-pandemic analysis results.
 
 #### References
-Andrés, D. (2023). Step-by-Step Guide to Multivariate Time Series Forecasting with VAR Models - ML Pills. [online] Available at: https://mlpills.dev/time-series/step-by-step-guide-to-multivariate-time-series-forecasting-with-var-models/ (Accessed 5-Dec-2024)
+Andrés, D. (2023). *Step-by-Step Guide to Multivariate Time Series Forecasting with VAR Models - ML Pills.* [online] Available at: https://mlpills.dev/time-series/step-by-step-guide-to-multivariate-time-series-forecasting-with-var-models/ (Accessed 5-Dec-2024)
 
-Government Data Quality Hub (2021), Meet the data quality dimensions. [online] GOV.UK. Available at: https://www.gov.uk/government/news/meet-the-data-quality-dimensions (Accessed: 14-Nov-2024)
+Government Data Quality Hub (2021), *Meet the data quality dimensions.* [online] GOV.UK. Available at: https://www.gov.uk/government/news/meet-the-data-quality-dimensions (Accessed: 14-Nov-2024)
 
-jmr (2020). Different results in ndiffs pmdarima (Time Series). Stack Overflow. [online] Available at: https://stackoverflow.com/questions/63859508/different-results-in-ndiffs-pmdarima-time-series. (Accessed 15-Jan-2025)
+jmr (2020). *Different results in ndiffs pmdarima (Time Series).* Stack Overflow. [online] Available at: https://stackoverflow.com/questions/63859508/different-results-in-ndiffs-pmdarima-time-series. (Accessed 15-Jan-2025)
 
-Ofqual (2022). Background information for malpractice in GCSE, AS and A level: summer 2022 exam series. [online] GOV.UK. Available at: https://www.gov.uk/government/statistics/malpractice-in-gcse-as-and-a-level-summer-2022-exam-series/background-information-for-malpractice-in-gcse-as-and-a-level-summer-2022-exam-series (Accessed 20 Nov 2024).
+Ofqual (2022). *Background information for malpractice in GCSE, AS and A level: summer 2022 exam series.* [online] GOV.UK. Available at: https://www.gov.uk/government/statistics/malpractice-in-gcse-as-and-a-level-summer-2022-exam-series/background-information-for-malpractice-in-gcse-as-and-a-level-summer-2022-exam-series (Accessed 20 Nov 2024).
 
-Ofqual Analytics (n.d.). Summary statistics. [online] Available at: https://analytics.ofqual.gov.uk/apps/GCSEandGCE/SummaryStats/. (Accessed 30-Oct-2024 and 7-Jan-2024)
+Ofqual Analytics (n.d.). *Summary statistics.* [online] Available at: https://analytics.ofqual.gov.uk/apps/GCSEandGCE/SummaryStats/. (Accessed 30-Oct-2024 and 7-Jan-2024)
 
-siamii (2024). Is there a library function for Root mean square error (RMSE) in python? [online] Stack Overflow. Available at: https://stackoverflow.com/questions/17197492/is-there-a-library-function-for-root-mean-square-error-rmse-in-python (accessed 18-Jan-2025)
+siamii (2024). *Is there a library function for Root mean square error (RMSE) in python?* [online] Stack Overflow. Available at: https://stackoverflow.com/questions/17197492/is-there-a-library-function-for-root-mean-square-error-rmse-in-python (accessed 18-Jan-2025)
 
-Singh, A. (2018). A Multivariate Time Series Guide to Forecasting and Modeling (with Python codes). [online] Analytics Vidhya. Available at: https://www.analyticsvidhya.com/blog/2018/09/multivariate-time-series-guide-forecasting-modeling-python-codes/ (accessed 5-Dec-2024)
+Singh, A. (2018). *A Multivariate Time Series Guide to Forecasting and Modeling (with Python codes).* [online] Analytics Vidhya. Available at: https://www.analyticsvidhya.com/blog/2018/09/multivariate-time-series-guide-forecasting-modeling-python-codes/ (accessed 5-Dec-2024)
 
 The National Archives (2019). *Open Government Licence.* [online] Nationalarchives.gov.uk. Available at: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/ (Accessed 30-Oct-2024)
 
-
-
----
-Read Me under docs
-This is a my stick person image
-![](/docs/assets/images/Stickperson.jfif)
-#### This is a level 4 header
-##### This is a level 5 header
-###### This is a level 6 header
-Reference
-[Ref](https://analytics.ofqual.gov.uk/apps/GCSEandGCE/SummaryStats/)
