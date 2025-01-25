@@ -36,7 +36,7 @@ The concept of the ETL data pipeline (image 2) in data engineering is of Extract
 
 Image 3: Data & Process Flow Chart Legend
 
-![Projects Flow-Chart](assets/images/DataProcessFlowChart_Legend.jpg "Projects Data & Process Flow Chart")
+![Projects Flow-Chart](assets/images/DataProcessFlowChart_I.jpg "Projects Data & Process Flow Chart")
 
 Image 4: Data & Process Flow Chart
 
