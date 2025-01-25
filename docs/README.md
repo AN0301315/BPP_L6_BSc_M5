@@ -79,7 +79,7 @@ Image 9: Count of ‘Malpractice’ by its ‘Statistics’
 While Malpractice cases are only displayed as summer series coverage, the dataset is more granular, as each ‘Topic’ is split up into sub-topics called ‘Statistics’ (image 5 and 9), so I filtered on and then aggregate the Malpractice cases and Entries by exam board and year.
 
 ###### Feature Engineering
-![Data-Quality Malpractice%](/docs/assets/images/Dataset_Malpractice%.jpg "Data-Quality Malpractice%")
+![Data-Quality Malpractice Percent](/docs/assets/images/Dataset_MalpracticePercent.jpg "Data-Quality Malpractice Percent")
 
 Image 10: % of malpractice cases by exam board
 
