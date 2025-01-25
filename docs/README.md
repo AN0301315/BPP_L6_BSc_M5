@@ -1,12 +1,15 @@
-test 39
+test 40
 
 1
+
 ![](images/Stickperson.jpg)
 
 2
+
 ![Me](images/Stickperson.jpg)
 
 3
+
 ![Me](images/Stickperson.jpg "A stickperson representing me")
 
 #### Title
