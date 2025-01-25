@@ -1,13 +1,3 @@
-test 44
-
-6
-
-![Me](assets/images/Stickperson.jpg)
-
-7
-
-![Me](assets/images/Stickperson.jpg "Stickperson representing me")
-
 
 #### Title
 Predicting UK GQ education malpractice cases (%) by exam board (multivariate time series analysis), using public data.
@@ -36,27 +26,27 @@ I used Python code, especially the Pandas library, for the Data Quality Audit, a
 
 I created ETL Diagrams, Data & Process Workflow Illustrations, and Data Dictionaries for highlighting any bottlenecks or data processing challenges and helping to keep the project realization on track.
 
-![ETL_Pipeline](/docs/assets/images/ETL-Pipeline_I.jpg "ETL-Pipeline Diagram")
+![ETL_Pipeline](assets/images/ETL-Pipeline_I.jpg "ETL-Pipeline Diagram")
 
 Image 2: ETL-Pipeline
 
 The concept of the ETL data pipeline (image 2) in data engineering is of Extract (E), Transform (T), and Load (L) the data into a data depository for further use for analysis or presentation. 
 
-![FlowChart_Legend](/docs/assets/images/DataProcessFlowChart_Legend.jpg "Data & Process Flow Chart Legend")
+![Flow-Chart_Legend](assets/images/DataProcessFlowChart_Legend.jpg "Data & Process Flow Chart Legend")
 
 Image 3: Data & Process Flow Chart Legend
 
-![Data & Process Flow Chart](/docs/assets/images/DataProcessFlowChart_Legend.jpg "Data & Process Flow Chart")
+![Projects Flow-Chart](assets/images/DataProcessFlowChart_Legend.jpg "Projects Data & Process Flow Chart")
 
 Image 4: Data & Process Flow Chart
 
 The Data & Process Workflow Illustrations (image 3 and 4) provides details about each process step. 
 
-![Data-Dictionary of raw dataset](/docs/assets/images/DataDictionary_raw.jpg "Data-Dictionary of raw dataset")
+![Data-Dictionary Raw Dataset](assets/images/DataDictionary_raw.jpg "Data-Dictionary of raw dataset")
 
 Image 5: Data-dictionary (raw dataset)
 
-![Data-Dictionary of cleaned dataset](/docs/assets/images/DataDictionary_cleaned.jpg "Data-Dictionary of cleaned dataset")
+![Data-Dictionary Cleaned Dataset](assets/images/DataDictionary_cleaned.jpg "Data-Dictionary of cleaned dataset")
 
 Image 6: Data-dictionary (cleaned dataset)
 
@@ -67,25 +57,25 @@ The Data Dictionaries (images 5 and 6) provides dataset key information, like va
 To get an understanding of the dataset I explored documentation and information provided by the data publisher.
 Based on the six principles of Data Quality Dimensions [(Government Data Quality Hub, 2021)](https://www.gov.uk/government/news/meet-the-data-quality-dimensions), I performed a Data Quality Audit, for which I used methods and techniques of descriptive data analysis for data profiling and data exploration.
 
-![Data-Quality NaN by Topic](/docs/assets/images/DataQualityAudit_NaN_I.jpg "Data-Quality NaN by Topic")
+![Data-Quality NaN by Topic](assets/images/DataQualityAudit_NaN_I.jpg "Data-Quality: Stacked Bar Chart showing NaN by Topic")
 
 Image 7: Missing values by Topic
 
-![Data-Quality summarising variables](/docs/assets/images/DataQuality_Sums.jpg "Data-Quality summarising variables")
+![Data-Quality summarising variables](assets/images/DataQuality_Sums.jpg "Data-Quality: Results of summarising variables")
 
 Image 8: Summarisation of values for all boards vs ‘All boards’
 
 The part of the dataset relevant to my analysis were complete, meaning it had no missing values for the Topics ‘Malpractice’ and ‘Entries’ (image 7), but I found issues with consistency, meaning a conflict with other values within the dataset (image 8). Thus is, that when summarising the malpractice counts for the exam boards, it differs to the total provided under ‘All boards’. When comparing the summary report I am using with the original detailed datasets, I can see that ‘<5’ had been replaced with ‘5’ in the summary report. For my analysis I will use ‘All boards’ as another variable and not summarising results.
 
 ##### Feature Transformation
-![Data-Quality Malpractice Sub-Topics](/docs/assets/images/Dataset_Malpractice_Statistics_Counts.jpg "Data-Quality Malpractice Sub-Topics")
+![Data-Quality Malpractice Sub-Topics](assets/images/Dataset_Malpractice_Statistics_Counts.jpg "Data-Quality: Line Graph showing datapoints of Malpractice Sub-Topics")
 
 Image 9: Count of ‘Malpractice’ by its ‘Statistics’
 
 While Malpractice cases are only displayed as summer series coverage, the dataset is more granular, as each ‘Topic’ is split up into sub-topics called ‘Statistics’ (image 5 and 9), so I filtered on and then aggregate the Malpractice cases and Entries by exam board and year.
 
 ##### Feature Engineering
-![Data-Quality Malpractice Percent](/docs/assets/images/Dataset_MalpracticePercent.jpg "Data-Quality Malpractice Percent")
+![Data-Quality Malpractice Percent](assets/images/Dataset_MalpracticePercent.jpg "Data-Quality: :ine Graph showing datapoints of Malpractice Percent")
 
 Image 10: % of malpractice cases by exam board
 
@@ -98,13 +88,13 @@ Then I transformed the dataset from long format by pivot to wide format, so that
 I was surprised seeing instead of NaN values a break in pattern during the Covid-19 Pandemic for Malpractice cases. While students received qualification results from the exam boards based on teacher judgement, there were cases with centres not complying with instructions for centre assessed grades (CAG) or students reported to awarding organisations for attempting to gain an unfair advantage. [(Ofqual, 2022)](https://www.gov.uk/government/statistics/malpractice-in-gcse-as-and-a-level-summer-2022-exam-series/background-information-for-malpractice-in-gcse-as-and-a-level-summer-2022-exam-series).
 This break in pattern will have an impact on the outcome of the analysis. Thus, I decided to create two data models.
 
-![Training Dataset Datapoints](/docs/assets/images/Dataset_Train_Plotted.jpg "Linegraph showing Training Dataset Datapoints")
+![Training Dataset Datapoints](assets/images/Dataset_Train_Plotted.jpg "Linegraph showing datapoints of training datasets")
 
 Image 11: Datapoints of the train-datasets
 
 Then splitting it into test data (year 2024) and training data (years 2017-2023), one (train-dataset-1) with the actual figures, including the Covid-19 pandemic abnormalities, and the other (train-dataset-2), replacing those with the mean of its exam board, hoping avoiding introducing a trend in the data as I would with the methods of backfilling or carrying forward (image 11).
 
-![Dataset Datapoints](/docs/assets/images/Datasets_I.jpg "Tables showing Dataset Datapoints")
+![Datasets Datapoints](assets/images/Datasets_I.jpg "Tables showing all datasets datapoints")
 
 Image 12: Datasets transformed for analysis
 
@@ -121,11 +111,11 @@ Prior to model building, Granger’s causality test can be used to identify the 
 To help with selecting appropriate data preprocessing and the data model, I checked the data for trend (long-term movements), seasonality (repeating patterns or cycles), and stationarity (constant statistical properties).
 
 ##### Trend & Seasonality
-![ACF Results on train-ds-1](/docs/assets/images/Graphs_ACF_train-ds-1.jpg "ACF Results on train-ds-1")
+![ACF Results on train-ds-1](assets/images/Graphs_ACF_train-ds-1.jpg "ACF Results on train-ds-1")
 
 Image 13: ACF results for all variables (train-dataset-1)
 
-![ACF Results on train-ds-2](/docs/assets/images/Graphs_ACF_train-ds-2.jpg "ACF Results on train-ds-2")
+![ACF Results on train-ds-2](assets/images/Graphs_ACF_train-ds-2.jpg "ACF Results on train-ds-2")
 
 Image 14: ACF results for all variables (train-dataset-2)
 
@@ -134,11 +124,11 @@ The results of the ACF (autocorrelation function) are that here are no slowly de
 ##### Stationarity
 Using the ADF (Augmented Dickey–Fuller) statistical Hypothesis test, confirming stationarity by rejecting the null hypothesis of at least one unit root in the series.
 
-![ADF Results on train-ds-1](/docs/assets/images/ADF_train-ds-1.jpg "ADF Results on train-ds-1")
+![ADF Results on train-ds-1](assets/images/ADF_train-ds-1.jpg "ADF Results on train-ds-1")
 
 Image 15: ADF results for all variables (train-dataset-1)
 
-![ADF Results on train-ds-1](/docs/assets/images/ADF_train-ds-1.jpg "ADF Results on train-ds-1")
+![ADF Results on train-ds-2](assets/images/ADF_train-ds-2.jpg "ADF Results on train-ds-2")
 
 Image 16: ADF results for all variables (train-dataset-2)
 
@@ -147,31 +137,31 @@ For train-dataset-1, the p-values for the variables ‘OCR’ and ‘All boards�
 For train-dataset-2, all variables except ‘OCR’ are non-stationary time-series (image 16).
 
 ##### Differencing
-![Diff Results on train-ds-1](/docs/assets/images/Diff_train-ds-1.jpg "Diff Results on train-ds-1")
+![Diff Results on train-ds-1](assets/images/Diff_train-ds-1.jpg "Diff Results on train-ds-1")
 
 Image 17: Attempt to increase stationarity through differencing (train-dataset-1)
 
 The attempt to make the time-series stationary through differencing failed (image 17).
 
 ##### Model Evaluation
-![ModelEvaluation LineGraphs](/docs/assets/images/ModelEvaluation_I.jpg "ModelEvaluation LineGraphs")
+![Model-Evaluation LineGraphs](assets/images/ModelEvaluation_I.jpg "Model-Evaluation: Line Graphs by variable")
 
 Image 18: Model Evaluation
 
 The success of the model is measured by using part of the dataset not included in the model training dataset, for evaluating a test-predicting. The train/test data split is using the end of the dataset for testing and the beginning for training, thus maintaining the pattern of the data by not splitting it randomly (image 18).
 
-![ModelEvaluation RMSE](/docs/assets/images/ModelEvaluation_RMSE.jpg "ModelEvaluation RMSE")
+![Model-Evaluation RMSE](assets/images/ModelEvaluation_RMSE.jpg "Model-Evaluation: Results of RMSE")
 
 Image 19: Root-Mean-Squared-Error results
 
 Comparing both models, using the RMSE (Root-Mean-Squared-Error) function [(siamii, 2024)](https://stackoverflow.com/questions/17197492/is-there-a-library-function-for-root-mean-square-error-rmse-in-python ), confirmed that the break in pattern of the data of the pandemic years does have an impact on the results of the analysis, as the second model with the Covid-19 numbers being replaced by the training data mean, performed better (image 19).
 
 ##### Prediction
-![Predicting2025 by variable](/docs/assets/images/Prediction_1Year_1_I.jpg "Predicting2025 by variable")
+![Predicting2025 by variable](assets/images/Prediction_1Year_1_I.jpg "Line graphs showing Predicting 2025 by variable")
 
 Image 20: Predicting Malware_% for year 2025
 
-![Predicting2025 all variables](/docs/assets/images/Prediction_1Year_2_I.jpg "Predicting2025 all variables")
+![Predicting2025 all variables](assets/images/Prediction_1Year_2_I.jpg "Line graph showing Predicting2025 all variables")
 
 Image 21: Predicting Malware_% for year 2025
 
@@ -182,7 +172,7 @@ Using the models to predict Malware_% for 2025 displayed a more erratic prognosi
 While the time-series does not contain sufficient datapoints to create trustworthy results, I will apply my learning, and the methods used on multi-variable time-series into a workplace related analysis. Overall, it also has proven that the break in pattern by the Covid-19 Pandemic Years has a substantial impact on the outcome of the analysis, which needs to be dealt with.
 
 ##### Limitations
-![Error for running ndiff](/docs/assets/images/ndiffs_error.jpg "Error for running ndiffs")
+![Error for running ndiff](assets/images/ndiffs_error.jpg "Error for running ndiffs")
 
 Image 22: Exception when running ndiffs()
 
