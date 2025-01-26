@@ -159,13 +159,13 @@ Comparing both models, using the RMSE (Root-Mean-Squared-Error) function [(siami
 ##### Prediction
 ![Predicting2025 by variable](assets/images/Prediction_1Year_1_I.jpg "Line graphs showing Predicting 2025 by variable")
 
-Image 20: Predicting Malware_% for year 2025
+Image 20: Predicting Malpractice_% for year 2025
 
 ![Predicting2025 all variables](assets/images/Prediction_1Year_2_I.jpg "Line graph showing Predicting2025 all variables")
 
-Image 21: Predicting Malware_% for year 2025
+Image 21: Predicting Malpractice_% for year 2025
 
-Using the models to predict Malware_% for 2025 displayed a more erratic prognosis for the dataset with the Covid-19 pandemic pattern anomaly (images 20 and 21).
+Using the models to predict Malpractice_% for 2025 displayed a more erratic prognosis for the dataset with the Covid-19 pandemic pattern anomaly (images 20 and 21).
 
 #### Conclusion
 ##### Results
